@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+    &:focus {
+        border: none;
+        background: none;
+    }
+}
+
+$main-color: #060029;
+$second-color: #1f2a48;
+
+body {
+    background: $main-color;
+}
+
+#input {
+    background: $second-color;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    margin: 5rem auto;
+    border-radius: 10px;
+    #search-icon {
+        color: blue;
+        padding: 0 10px;
+    }
+    #user {
+        height: 40px;
+        width: 250px;
+        margin-left: 0.5rem;
+        background: transparent;
+        color: #fff;
+        &:focus {
+            background: transparent;
+        }
+    }
+    #submit {
+        background-color: blue;
+        padding: 0.4rem 1rem;
+        color: #fff;
+        border-radius: 5px;
+    }
+}
+
+.users {
+    background: $second-color;
+    margin: 30px auto;
+    width: 700px;
+    border-radius: 10px;
+    .user {
+        width: 85%;
+        .profile {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            margin-left: 50px;
+            .avatar {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .profile-content {
+                margin-left: 2rem;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+        .profile-statistics {
+            display: flex;
+            padding: 2rem;
+            margin-left: 10rem;
+            margin-top: 30px;
+            justify-content: space-around;
+            background: $main-color;
+            width: 500px;
+            color: #fff;
+            border-radius: 20px;
+            div {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                span {
+                    padding: 1rem;
+                }
+            }
+        }
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 10rem;
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+            color: #fff;
+            p {
+                margin-top: 1rem;
+                i {
+                    padding: 0 15px;
+                }
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  border: none;
+  background: none;
+}
+
+body {
+  background: #060029;
+}
+
+#input {
+  background: #1f2a48;
+  width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem auto;
+  border-radius: 10px;
+}
+
+#input #search-icon {
+  color: blue;
+  padding: 0 10px;
+}
+
+#input #user {
+  height: 40px;
+  width: 250px;
+  margin-left: 0.5rem;
+  background: transparent;
+  color: #fff;
+}
+
+#input #user:focus {
+  background: transparent;
+}
+
+#input #submit {
+  background-color: blue;
+  padding: 0.4rem 1rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.users {
+  background: #1f2a48;
+  margin: 30px auto;
+  width: 700px;
+  border-radius: 10px;
+}
+
+.users .user {
+  width: 85%;
+}
+
+.users .user .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  margin-left: 50px;
+}
+
+.users .user .profile .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.users .user .profile .profile-content {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.users .user .profile-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  margin-left: 10rem;
+  margin-top: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #060029;
+  width: 500px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.users .user .profile-statistics div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.users .user .profile-statistics div span {
+  padding: 1rem;
+}
+
+.users .user .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+.users .user .info p {
+  margin-top: 1rem;
+}
+
+.users .user .info p i {
+  padding: 0 15px;
+}
+
+.users .user .info p a {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
